@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "524175497017",
+    "project_id": "periodic-617e9",
+    "storage_bucket": "periodic-617e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524175497017:android:5775de0ee554d503f7bae8",
+        "android_client_info": {
+          "package_name": "com.soeren321.expoejected"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524175497017-sve9vph8sdk56a2jn5ih1bbf3ssbv9on.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUsvCtXqjh47uo8Y35hcPpC9NiwCHJkhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "524175497017-sve9vph8sdk56a2jn5ih1bbf3ssbv9on.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

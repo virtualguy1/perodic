@@ -10,33 +10,32 @@ import ReminderScreen from './screens/ReminderScreen';
 import CommunityScreen from './screens/CommunityScreen';
 
 //Screen names
-const homeName = "Home";
-const settingsName = "Settings";
-const reminderName = "Reminder";
-const communityName = "Communtiy";
+// const homeName = "Home";
+// const settingsName = "Settings";
+// const reminderName = "Reminder";
+// const communityName = "Community";
 
 const Tab = createBottomTabNavigator();
 
 function MainContainer() {
   return (
-    <NavigationContainer>
-      <Tab.Navigator
-        initialRouteName={homeName}
+      <Tab.Navigator 
+        initialRouteName="Home"
         screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
             let rn = route.name;
 
-            if (rn === homeName) {
+            if (rn === "Home") {
               iconName = focused ? 'home' : 'home-outline';
 
-            } else if (rn === settingsName) {
+            } else if (rn === "Settings") {
               iconName = focused ? 'settings' : 'settings-outline';
             
-            } else if (rn === reminderName) {
+            } else if (rn === "Reminder") {
                 iconName = focused ? 'alarm' : 'alarm-outline';
             
-            } else if (rn === communityName) {
+            } else if (rn === "Community") {
                 iconName = focused ? 'people' : 'people-outline';
             }
 
@@ -47,17 +46,15 @@ function MainContainer() {
         tabBarOptions={{
           activeTintColor: 'tomato',
           inactiveTintColor: 'grey',
-          labelStyle: { paddingBottom: 10, fontSize: 10 },
+          labelStyle: { paddingBottom: 5, fontSize: 10 },
           style: { padding: 10, height: 70}
         }}>
 
-        <Tab.Screen name={homeName} component={HomeScreen} />
-        <Tab.Screen name={reminderName} component={ReminderScreen} />
-        <Tab.Screen name={communityName} component={CommunityScreen} />
-        <Tab.Screen name={settingsName} component={SettingsScreen} />
-
+        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Reminder" component={ReminderScreen} />
+        <Tab.Screen name="Community" options={{headerShown: false}} component={CommunityScreen} />
+        <Tab.Screen name="Settings" component={SettingsScreen} />
       </Tab.Navigator>
-    </NavigationContainer>
   );
 }
 
