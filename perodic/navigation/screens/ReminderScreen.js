@@ -3,7 +3,6 @@ import { KeyboardAvoidingView, StyleSheet, Text, View, TextInput, TouchableOpaci
 import Task from './Task';
 
 export default function ReminderScreen({ navigation }) {
-    
     const [task, setTask] = useState();
     const [taskItems, setTaskItems] = useState([]);
   
@@ -31,7 +30,6 @@ export default function ReminderScreen({ navigation }) {
   
         {/* Today's Tasks */}
         <View style={styles.tasksWrapper}>
-          <Text style={styles.sectionTitle}>Today's tasks</Text>
           <View style={styles.items}>
             {/* This is where the tasks will go! */}
             {
@@ -72,7 +70,7 @@ const styles = StyleSheet.create({
       backgroundColor: '#E8EAED',
     },
     tasksWrapper: {
-      paddingTop: 80,
+      paddingTop: 20,
       paddingHorizontal: 20,
     },
     sectionTitle: {
@@ -80,33 +78,33 @@ const styles = StyleSheet.create({
       fontWeight: 'bold'
     },
     items: {
-      marginTop: 30,
+      marginTop: 10,
     },
     writeTaskWrapper: {
       position: 'absolute',
-      bottom: 60,
+      bottom: 20,
       width: '100%',
       flexDirection: 'row',
       justifyContent: 'space-around',
       alignItems: 'center'
     },
     input: {
-      paddingVertical: 15,
-      paddingHorizontal: 15,
+      paddingVertical: 10,
+      paddingHorizontal: 10,
       backgroundColor: '#FFF',
       borderRadius: 60,
-      borderColor: '#C0C0C0',
+      borderColor: 'tomato',
       borderWidth: 1,
-      width: 250,
+      width: 260,
     },
     addWrapper: {
-      width: 60,
-      height: 60,
+      width: 50,
+      height: 50,
       backgroundColor: '#FFF',
-      borderRadius: 60,
+      borderRadius: 50,
       justifyContent: 'center',
       alignItems: 'center',
-      borderColor: '#C0C0C0',
+      borderColor: 'tomato',
       borderWidth: 1,
     },
     addText: {},
